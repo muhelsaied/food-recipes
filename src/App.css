@@ -10,3 +10,28 @@ body{
 .letter-spacing{
   letter-spacing: .5rem;
 }
+
+.header-hero,
+.not-found{
+  min-height: calc(100vh - 56px);
+  background: linear-gradient(rgba(0,0,0,0.2),
+                            rgba(0,0,0,0.2)),
+                              url("./images/homeBcg.jpeg") center/cover;
+}
+.not-found{
+  background: linear-gradient(rgba(0,0,0,0.2),
+                            rgba(0,0,0,0.4),
+                            rgba(0,0,0,0.6),
+                            rgba(0,0,0,0.8)),
+                              url("./images/defaultBcg.jpeg") center/cover;
+}
+@media screen and (max-width:350px){
+  .text-slanted{
+    font-size: 45px !important;
+  }
+}
+@media screen and (max-width:240px){
+  .text-slanted{
+    font-size: 30px !important;
+  }
+}
