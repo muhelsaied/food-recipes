@@ -20,8 +20,9 @@ class Search extends Component {
                             <label htmlFor='search' className='text-capitalize text-awesome span'>
                                 find your recipe '<strong>sperate your content with comma</strong>'
                             </label>
-                            <div className='input-group align-middle text-align'>
+                            <div className='input-group m-auto'>
                                 <input
+                                className='form-control'
                                 type="search" 
                                 placeholder="caraot ,onoin,meat" 
                                 name="Search"

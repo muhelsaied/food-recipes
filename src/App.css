@@ -3,6 +3,7 @@ body{
 }
 .text-slanted{
   font-family: Dokdo,sans-serif ;
+  font-size: 60px !important;
 }
 .text-pruple{
   color: rgb(78, 13, 231);
