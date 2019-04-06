@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { recipeData } from '../data/tempDetails'
+// import { recipeData } from '../data/tempDetails'
 import { Link } from 'react-router-dom'
 import load from '../images/circles.svg'
 class SingleRecipe extends Component {
@@ -8,13 +8,34 @@ class SingleRecipe extends Component {
         const id = this.props.match.params.id;
         // console.log(id);
         this.state={
-            recipe : recipeData,
+            recipe : '',
             id,
-            loading:false,
+            loading:true,
             ingradents:''
         }
     }
-    
+    async componentDidMount(){
+        
+
+        const url = `https://www.food2fork.com/api/get?key=${process.env.REACT_APP_API_KEY}&rId=${this.state.id}`;
+
+        console.log(process.env.REACT_APP_API_KEY)
+        // error try
+        try{
+            const response = await fetch(url);
+            const responseData = await response.json();
+            // console.log(responseData)
+            this.setState({
+                recipe : responseData.recipe,
+                loading:false
+            })
+            
+        }
+        catch(error){
+                console.log(error)
+        }
+
+    }
     render() {
         //destructe recipe data 
         const  { publisher, publisher_url, source_url, title, image_url, ingredients }= this.state.recipe;
