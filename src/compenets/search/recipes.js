@@ -16,15 +16,15 @@ class Recipes extends Component {
                         <h5 className="card-title">{title}</h5>
                         <h6 className="text-pruple">provided by : {publisher}</h6>
                     </div>
-                    <div className="card-footer">
+                    <div className="card-footer d-block">
                        <Link 
                         to={`/recipes/${recipe_id}`}
-                        className="btn btn-danger text-capitalize mx-2">
+                        className="btn btn-danger text-capitalize mx-2 my-2">
                         details
                        </Link>
                        <a 
                         href = {source_url} 
-                        className="btn btn-warning text-capitalize mx-2"
+                        className="btn btn-warning text-capitalize mx-2 my-2"
                         target="_blank"
                         rel="noopener noreferrer"
                         >source page</a>
