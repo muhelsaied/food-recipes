@@ -85,7 +85,7 @@ class SingleRecipe extends Component {
                                         return(
                                             <li 
                                                 key = {index}
-                                                className='list-group-item '>
+                                                className='list-group-item text-capitalize span m-1 p-3'>
                                                 {item}
                                             </li>
                                         )
