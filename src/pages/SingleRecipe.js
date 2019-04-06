@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { recipeData } from '../data/tempDetails'
 import { Link } from 'react-router-dom'
-import load from '../images/circles.svg'
+import load from '../images/tail-spin.svg'
 class SingleRecipe extends Component {
     constructor(props){
         super(props);
@@ -51,8 +51,10 @@ class SingleRecipe extends Component {
                      </div>
                      <div className="row">
                          <div className='col-10 mx-auto col-md-6 my-3'>
-                             <img className="text-uppercase my-5 text-pruple text-awesome align-middle bg-danger rounded mx-auto d-block"
-                             src={load} alt='load'/>
+                             <img 
+                                className="text-uppercase my-5 text-pruple text-awesome align-middle bg-danger rounded mx-auto d-block"
+                                style={{width:'150px'}}
+                                src={load} alt='load'/>
                          </div>
                      </div>
                  </div>
