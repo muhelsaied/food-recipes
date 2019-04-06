@@ -7,6 +7,12 @@ body{
 .text-pruple{
   color: rgb(78, 13, 231);
 }
+.text-awesome{
+  font-family: 'Indie Flower', cursive;
+}
+.span{
+  color: rgb(154, 1, 113);
+}
 .letter-spacing{
   letter-spacing: .5rem;
 }
