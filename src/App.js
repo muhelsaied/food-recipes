@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import NavBar from './compenets/navbar'
 class App extends Component {
   render() {
+    alert('FOOD2FORK API WAS SHUTDOWN !!!!!!!!!!!')
     return (
       <Router>
           <div>
